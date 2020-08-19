@@ -1,7 +1,7 @@
 from kafka import KafkaConsumer
 from json import loads
 
-TOPIC_NAME = "maintopic"
+TOPIC_NAME = "IMAGE_RESULTS"
 
 consumer = KafkaConsumer(
     TOPIC_NAME,

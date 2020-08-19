@@ -1,7 +1,7 @@
 from kafka import KafkaProducer
 import json
 
-TOPIC_NAME = "maintopic"
+TOPIC_NAME = "IMAGE_RESULTS"
 
 producer = KafkaProducer(
     bootstrap_servers=["localhost:9092"],
