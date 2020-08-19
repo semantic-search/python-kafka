@@ -8,6 +8,6 @@ producer = KafkaProducer(
     value_serializer=lambda x: json.dumps(x).encode("utf-8"),
 )
 
-future = producer.send(TOPIC_NAME, value="Some message from kafka id")
+future = producer.send(TOPIC_NAME, value="Some message to kafka topic")
 result = future.get(timeout=60)
 print(result)
